@@ -1,12 +1,14 @@
-@use "../abstracts/mixins";
-@use "../abstracts/variables";
-@use "../base/reset";
-@use "../base/typographie";
-@use "../components/buttons";
-@use "../components/cards";
-@use "../layout/footer";
-@use "../layout/header";
+@font-face {
+  font-family: "lato-regular";
+  src: url(../../fonts/Lato/Lato-Regular.ttf);
+}
+
+* {
+  box-sizing: border-box;
+}
 
 body {
-  @include typographie.lato;
+  margin: 0;
+  padding: 0;
+  font-family: "lato-regular";
 }

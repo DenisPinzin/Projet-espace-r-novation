@@ -11,18 +11,6 @@
   align-items: center;
 }
 
-@mixin flex-evenly {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-}
-
-@mixin flex-around {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-
 @mixin none {
   display: none;
 }
@@ -43,24 +31,17 @@
   align-items: center;
 }
 
-@mixin flex-column-evenly {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
-}
-
-@mixin flex-column-around {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-}
-
 //CONTAINER
 @mixin desktop-container {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
   padding: 2.5rem 0;
+}
+
+//BTN
+@mixin btn {
+  padding: 20px;
+  color: white;
+  border-radius: 7px;
 }
