@@ -1,3 +1,45 @@
+* {
+  box-sizing: border-box;
+}
 
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "";
+}
+
+header {
+  background-color: #112e3e;
+}
+header .container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2.5rem 0;
+}
+header .container .header-contain {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .container .header-contain nav ul {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 1.5rem;
+}
+header .container .header-contain nav ul li {
+  list-style: none;
+}
+header .container .header-contain nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.75rem;
+}
+
+@font-face {
+  font-family: "Lato-Regular";
+  src: url(../../fonts/Lato/Lato-Regular.ttf);
+}
 
 /*# sourceMappingURL=styles.css.map */

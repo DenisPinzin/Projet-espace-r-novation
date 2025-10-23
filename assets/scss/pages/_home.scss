@@ -1,0 +1,12 @@
+@use "../abstracts/mixins";
+@use "../abstracts/variables";
+@use "../base/reset";
+@use "../base/typographie";
+@use "../components/buttons";
+@use "../components/cards";
+@use "../layout/footer";
+@use "../layout/header";
+
+body {
+  @include typographie.lato;
+}

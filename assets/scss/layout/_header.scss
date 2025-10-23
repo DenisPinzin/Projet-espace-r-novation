@@ -1,0 +1,33 @@
+@use "../abstracts/mixins";
+@use "../abstracts/variables";
+@use "../base/reset";
+@use "../base/typographie";
+@use "../components/buttons";
+@use "../components/cards";
+@use "../layout/footer";
+
+header {
+  background-color: variables.$dark-blue;
+  .container {
+    @include mixins.desktop-container;
+    .header-contain {
+      @include mixins.flex-between;
+      //   .logo {
+      //   }
+      nav {
+        ul {
+          @include mixins.flex-evenly;
+          gap: variables.$gap-large;
+          li {
+            list-style: reset.$style-none;
+            a {
+              text-decoration: reset.$decoration-none;
+              color: variables.$white;
+              font-size: typographie.$h3-size;
+            }
+          }
+        }
+      }
+    }
+  }
+}
