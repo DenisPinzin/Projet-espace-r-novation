@@ -1,15 +1,57 @@
 @font-face {
-  font-family: "lato-regular";
-  src: url(../../fonts/Lato/Lato-Regular.ttf);
+  font-family: "lato";
+  src: url("../fonts/Lato/Lato-Regular.ttf");
 }
 * {
   box-sizing: border-box;
 }
 
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2.5rem 0;
+}
+
+.btn {
+  padding: 20px;
+  color: white;
+  border-radius: 7px;
+  background-color: #112e3e;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.card-icon {
+  flex: 1;
+}
+
+.all-cards-sections {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+
 body {
+  font-family: "lato";
   margin: 0;
   padding: 0;
-  font-family: "lato-regular";
+  text-align: center;
+}
+body .hero {
+  background-image: url("../img/img espace renovation//img espace renovation/PHOTO-BUEAU.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 70vh;
+}
+body .hero h1 {
+  color: white;
+  padding: 12% 80% 0 0;
+  text-align: start;
+}
+body .hero h1 .h1-span {
+  color: orange;
 }
 
 header {
@@ -26,19 +68,29 @@ header .container .header-contain {
   justify-content: space-between;
   align-items: center;
 }
+header .container .header-contain .logo {
+  width: 17rem;
+}
+header .container .header-contain .logo img {
+  width: 100%;
+}
 header .container .header-contain nav ul {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  gap: 1.5rem;
 }
 header .container .header-contain nav ul li {
   list-style: none;
+  padding: 0 20px;
+  border-right: solid white 1px;
 }
 header .container .header-contain nav ul li a {
   text-decoration: none;
   color: white;
-  font-size: 1.75rem;
+  font-size: 1.5rem;
+}
+header .container .header-contain nav ul li:last-child {
+  border: none;
 }
 
 /*# sourceMappingURL=styles.css.map */

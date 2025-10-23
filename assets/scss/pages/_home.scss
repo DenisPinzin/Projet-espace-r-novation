@@ -1,14 +1,46 @@
-@font-face {
-  font-family: "lato-regular";
-  src: url(../../fonts/Lato/Lato-Regular.ttf);
-}
+@use "../base/typographie";
+@use "../abstracts/mixins";
+@use "../abstracts/variables";
 
 * {
   box-sizing: border-box;
 }
 
+.container {
+  @include mixins.desktop-container;
+}
+
+.btn {
+  @include mixins.btn;
+}
+
+.card-icon {
+  @include mixins.card;
+}
+
+.all-cards-sections {
+  @include mixins.all-cards-sections;
+}
+
 body {
+  @include typographie.lato;
   margin: 0;
   padding: 0;
-  font-family: "lato-regular";
+  text-align: center;
+
+  .hero {
+    background-image: url("../img/img espace renovation//img espace renovation/PHOTO-BUEAU.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 70vh;
+    h1 {
+      color: variables.$white;
+      padding: 12% 80% 0 0;
+      text-align: start;
+      .h1-span {
+        color: variables.$orange;
+      }
+    }
+  }
 }

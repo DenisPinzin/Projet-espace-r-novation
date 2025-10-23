@@ -1,3 +1,5 @@
+@use "../abstracts/variables";
+
 //DISPLAY ROW
 @mixin flex-center {
   display: flex;
@@ -5,7 +7,7 @@
   align-items: center;
 }
 
-@mixin flex-between {
+@mixin flex-start-between {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -42,6 +44,20 @@
 //BTN
 @mixin btn {
   padding: 20px;
-  color: white;
+  color: variables.$white;
   border-radius: 7px;
+  background-color: variables.$dark-blue;
+  text-decoration: none;
+  display: inline-block;
+}
+
+//CARDS
+@mixin all-cards-sections {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+
+@mixin card {
+  flex: 1;
 }

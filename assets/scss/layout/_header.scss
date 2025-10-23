@@ -6,20 +6,28 @@ header {
   .container {
     @include mixins.desktop-container;
     .header-contain {
-      @include mixins.flex-between;
-      //   .logo {
-      //   }
+      @include mixins.flex-start-between;
+      .logo {
+        width: 17rem;
+        img {
+          width: 100%;
+        }
+      }
       nav {
         ul {
-          @include mixins.flex-center;
-          gap: variables.$gap-large;
+          @include mixins.flex-start-between;
           li {
             list-style: none;
+            padding: 0 20px;
+            border-right: solid variables.$white 1px;
             a {
               text-decoration: none;
               color: variables.$white;
-              font-size: variables.$h3-size;
+              font-size: variables.$h4-size;
             }
+          }
+          li:last-child {
+            border: none;
           }
         }
       }
