@@ -2,6 +2,18 @@
   font-family: "lato";
   src: url("../fonts/Lato/Lato-Regular.ttf");
 }
+h3 {
+  font-weight: 200;
+}
+
+.card h3 {
+  font-weight: bold;
+}
+
+p span {
+  font-weight: bold;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -81,7 +93,7 @@ header .header-contain nav ul li {
 header .header-contain nav ul li a {
   text-decoration: none;
   color: white;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 header .header-contain nav ul li:last-child {
   border: none;
@@ -97,7 +109,6 @@ footer .footer-dflex {
 }
 footer .footer-dflex .footer-jobs {
   text-align: justify;
-  font-size: 1.5rem;
   padding: 0 1.5%;
   line-height: 2rem;
 }

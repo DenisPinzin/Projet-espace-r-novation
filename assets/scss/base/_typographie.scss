@@ -6,3 +6,15 @@
 @mixin lato {
   font-family: "lato";
 }
+
+h3 {
+  font-weight: 200;
+}
+
+.card h3 {
+  font-weight: bold;
+}
+
+p span {
+  font-weight: bold;
+}
