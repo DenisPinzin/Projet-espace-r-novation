@@ -3,7 +3,6 @@
 
 footer {
   background-color: variables.$dark-blue;
-  text-align: start;
   color: variables.$white;
 
   .footer-dflex {
@@ -23,5 +22,16 @@ footer {
   }
   .copyright {
     text-align: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .footer-dflex {
+    flex-direction: column;
+    align-items: center;
+
+    .footer-adresse {
+      border: none !important;
+    }
   }
 }

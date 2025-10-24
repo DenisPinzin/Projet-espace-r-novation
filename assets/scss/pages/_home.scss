@@ -13,24 +13,6 @@
   padding: 2.5rem 0;
 }
 
-//BTN
-
-.btn {
-  @include mixins.button(variables.$dark-blue, variables.$white);
-}
-
-//CARD
-
-.cards-sections {
-  display: flex;
-  justify-content: space-between;
-  align-items: start;
-}
-
-.card {
-  flex: 1;
-}
-
 //BODY
 body {
   @include typographie.lato;
@@ -51,6 +33,22 @@ body {
       .h1-span {
         color: variables.$orange;
       }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hero-title {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    h1 {
+      padding: 0 !important;
+      margin: 0;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
     }
   }
 }

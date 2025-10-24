@@ -13,6 +13,7 @@ header {
         width: 100%;
       }
     }
+
     nav {
       ul {
         display: flex;
@@ -34,9 +35,27 @@ header {
       }
     }
   }
+  .menu {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 768px) {
   .header-contain {
+    nav {
+      display: none;
+    }
+    .menu {
+      display: inline-block;
+      width: 50px;
+      height: 50px;
+      margin: 2%;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        object-position: center;
+      }
+    }
   }
 }

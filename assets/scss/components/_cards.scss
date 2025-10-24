@@ -1,5 +1,4 @@
 //CARD
-
 .cards-sections {
   display: flex;
   justify-content: space-between;
@@ -15,4 +14,13 @@
   width: auto;
   object-fit: cover;
   object-position: center;
+}
+
+@media screen and (max-width: 768px) {
+  .cards-sections {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
