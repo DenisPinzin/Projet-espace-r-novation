@@ -1,0 +1,8 @@
+@use "../abstracts/variables";
+@use "../abstracts/mixins";
+
+//BTN
+
+.btn {
+  @include mixins.button(variables.$dark-blue, variables.$white);
+}

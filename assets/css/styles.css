@@ -121,4 +121,30 @@ footer .copyright {
   text-align: center;
 }
 
+.btn {
+  padding: 20px;
+  color: white;
+  border-radius: 7px;
+  background-color: #112e3e;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.cards-sections {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+
+.card {
+  flex: 1;
+}
+
+.card img {
+  height: 100%;
+  width: auto;
+  object-fit: cover;
+  object-position: center;
+}
+
 /*# sourceMappingURL=styles.css.map */
