@@ -7,19 +7,28 @@
 }
 
 .container {
-  @include mixins.desktop-container;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2.5rem 0;
 }
+
+//BTN
 
 .btn {
-  @include mixins.btn;
+  @include mixins.button(variables.$dark-blue, variables.$white);
 }
 
-.card-icon {
-  @include mixins.card;
+//CARD
+
+.cards-sections {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
 }
 
-.all-cards-sections {
-  @include mixins.all-cards-sections;
+.card {
+  flex: 1;
 }
 
 body {

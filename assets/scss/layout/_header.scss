@@ -3,34 +3,40 @@
 
 header {
   background-color: variables.$dark-blue;
-  .container {
-    @include mixins.desktop-container;
-    .header-contain {
-      @include mixins.flex-start-between;
-      .logo {
-        width: 17rem;
-        img {
-          width: 100%;
-        }
+  .header-contain {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .logo {
+      width: 17rem;
+      img {
+        width: 100%;
       }
-      nav {
-        ul {
-          @include mixins.flex-start-between;
-          li {
-            list-style: none;
-            padding: 0 20px;
-            border-right: solid variables.$white 1px;
-            a {
-              text-decoration: none;
-              color: variables.$white;
-              font-size: variables.$h4-size;
-            }
+    }
+    nav {
+      ul {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        li {
+          list-style: none;
+          padding: 0 20px;
+          border-right: solid variables.$white 1px;
+          a {
+            text-decoration: none;
+            color: variables.$white;
+            font-size: variables.$h4-size;
           }
-          li:last-child {
-            border: none;
-          }
+        }
+        li:last-child {
+          border: none;
         }
       }
     }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header-contain {
   }
 }

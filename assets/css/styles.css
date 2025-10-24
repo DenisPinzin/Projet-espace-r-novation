@@ -22,14 +22,14 @@
   display: inline-block;
 }
 
-.card-icon {
-  flex: 1;
-}
-
-.all-cards-sections {
+.cards-sections {
   display: flex;
   justify-content: space-between;
   align-items: start;
+}
+
+.card {
+  flex: 1;
 }
 
 body {
@@ -57,39 +57,33 @@ body .hero h1 .h1-span {
 header {
   background-color: #112e3e;
 }
-header .container {
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 2.5rem 0;
-}
-header .container .header-contain {
+header .header-contain {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-header .container .header-contain .logo {
+header .header-contain .logo {
   width: 17rem;
 }
-header .container .header-contain .logo img {
+header .header-contain .logo img {
   width: 100%;
 }
-header .container .header-contain nav ul {
+header .header-contain nav ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-header .container .header-contain nav ul li {
+header .header-contain nav ul li {
   list-style: none;
   padding: 0 20px;
   border-right: solid white 1px;
 }
-header .container .header-contain nav ul li a {
+header .header-contain nav ul li a {
   text-decoration: none;
   color: white;
   font-size: 1.5rem;
 }
-header .container .header-contain nav ul li:last-child {
+header .header-contain nav ul li:last-child {
   border: none;
 }
 
@@ -109,7 +103,7 @@ footer .footer-dflex .footer-jobs {
 }
 footer .footer-dflex .footer-adresse {
   border-left: 1px solid white;
-  padding: 1.5%;
+  padding: 0 1.5%;
   width: 35rem;
 }
 footer .copyright {

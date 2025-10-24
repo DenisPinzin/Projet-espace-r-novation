@@ -1,63 +1,10 @@
-@use "../abstracts/variables";
-
-//DISPLAY ROW
-@mixin flex-center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-@mixin flex-start-between {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-@mixin none {
-  display: none;
-}
-
-//DISPLAY COLUMN
-
-@mixin flex-column-center {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-@mixin flex-column-between {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-}
-
-//CONTAINER
-@mixin desktop-container {
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 2.5rem 0;
-}
-
 //BTN
-@mixin btn {
+
+@mixin button($bg-color, $text-color) {
   padding: 20px;
-  color: variables.$white;
+  color: $text-color;
   border-radius: 7px;
-  background-color: variables.$dark-blue;
+  background-color: $bg-color;
   text-decoration: none;
   display: inline-block;
-}
-
-//CARDS
-@mixin all-cards-sections {
-  display: flex;
-  justify-content: space-between;
-  align-items: start;
-}
-
-@mixin card {
-  flex: 1;
 }
