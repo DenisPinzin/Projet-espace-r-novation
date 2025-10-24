@@ -1,0 +1,28 @@
+@use "../abstracts/mixins";
+@use "../abstracts/variables";
+
+footer {
+  background-color: variables.$dark-blue;
+  text-align: start;
+  color: variables.$white;
+
+  .footer-dflex {
+    display: flex;
+
+    .footer-jobs {
+      text-align: justify;
+      font-size: variables.$h4-size;
+      padding: 0 1.5%;
+      line-height: 2rem;
+    }
+
+    .footer-adresse {
+      border-left: 1px solid white;
+      padding: 1.5%;
+      width: 35rem;
+    }
+  }
+  .copyright {
+    text-align: center;
+  }
+}

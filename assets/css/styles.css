@@ -93,4 +93,27 @@ header .container .header-contain nav ul li:last-child {
   border: none;
 }
 
+footer {
+  background-color: #112e3e;
+  text-align: start;
+  color: white;
+}
+footer .footer-dflex {
+  display: flex;
+}
+footer .footer-dflex .footer-jobs {
+  text-align: justify;
+  font-size: 1.5rem;
+  padding: 0 1.5%;
+  line-height: 2rem;
+}
+footer .footer-dflex .footer-adresse {
+  border-left: 1px solid white;
+  padding: 1.5%;
+  width: 35rem;
+}
+footer .copyright {
+  text-align: center;
+}
+
 /*# sourceMappingURL=styles.css.map */
